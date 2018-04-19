@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #eef;
 }
 /* Link Styles */
 
@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 3;
 }
 .nav {
   display: flex;
@@ -57,7 +58,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/canyon.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -70,11 +71,13 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #95683a;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  border: 2px solid #504bb0;
+  border-radius: 20%;
 }
 .tag {
   background-color: #efefef;
@@ -89,17 +92,18 @@ header .profile-image:hover {
   color: yellow;
 }
 .card {
+  color: #fff;
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: #032399;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #a96f42;
 }
 
 ul.skills {
@@ -119,6 +123,69 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: #0399ff;
 }
+
+/*==========================
+Card Styles
+==========================*/
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.card h2 {
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+.card-hobbies {
+  list-style: none;
+  padding: 0;
+  border-top: solid 2px #fff;
+}
+
+.card-hobbies li {
+  border-bottom: 2px solid #fff;
+  line-height: 2;
+  transition: all 0.3s;
+}
+.card-hobbies li:hover {
+  background: #fff;
+  color: #032399;
+  border: solid 3px #032399;
+  transform: scale(1.1);
+}
+
+.card-places {
+  font-weight: bold;
+}
+
+/*================
+Button Styles
+================*/
+
+.btn {
+  color: #fff;
+  border: solid 1px #000;
+  border-radius: 5px;
+  background: #bca054;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 10px 10px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #bca054;
+}
+
+/*================
+Footer Styles
+================*/
 
 footer {
   width: 100%;
